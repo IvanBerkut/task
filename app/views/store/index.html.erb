@@ -1,0 +1,11 @@
+<% if notice %>
+    <p id="notice"><% notice %></p>
+<% end %>
+
+<h1>Зарегестрированные URL</h1>
+
+<% @urls.each do |url| %>
+  <div>
+    <h3><%= url.title %></h3>
+  </div>
+<% end %>
