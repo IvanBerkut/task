@@ -56,7 +56,7 @@ class UrlsController < ApplicationController
   def destroy
     @url.destroy
     respond_to do |format|
-      format.html { redirect_to urls_url, notice: 'Url was successfully destroyed.' }
+      format.html { redirect_to home_url, notice: 'Url was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -72,3 +72,4 @@ class UrlsController < ApplicationController
       params.require(:url).permit(:title)
     end
 end
+
