@@ -1,7 +1,7 @@
 <% if notice %>
     <p id="notice"><% notice %></p>
 <% end %>
-<h1><%= link_to "Создать свой URL", urls_path %> </h1>
+<h1><%= link_to "Создать свой URL", home_path %> </h1>
 <h2>Уже зарегестрированные URL:</h2>
 
 <% @urls.each do |url| %>
